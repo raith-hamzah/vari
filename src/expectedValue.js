@@ -1,12 +1,15 @@
 
-export default function (array, formatter) {
+export default function (array, property) {
 	let total = 0;
-	array.forEach( value => {
-		total += value;
-	});
-	if (!formatter) {
+	if (!property) {
+		array.forEach( value => {
+			total += value;
+		});
 		return total / array.length;
 	} else {
-		return formatter(total / array.length);
+		array.forEach( value => {
+			total[property] += value
+		});
+		return total[property] / array.length;
 	}
 }

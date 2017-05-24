@@ -1,12 +1,12 @@
 import ncr from './binomialCoefficient';
 
-export default function (n, p) {
-	const expectedValue = n*p;
-	const variance = n*p*(1-p);
+export default function (N, K, n) {
+	const expectedValue = n*(K / N);
+	const variance = n*(K/N)*((N-K)/N)*((N-n)/(N-1));
 	const standardDeviation = Math.sqrt(variance);
-	const mode = Math.floor((n+1)*p);
-	const median = Math.floor(n*p);
-	const skewness = (1-2*p)/(Math.sqrt(n*p*(1-p)));
+	const mode = Math.floor((n+1)*(K+1)/(n+2));
+	const skewness = (N - 2*K) * Math.sqrt(N-1) * (N - 2*n) / 
+		(Math.sqrt(n*K*(N-K)*(N-n))*(N-2));
 	return {
 		expectedValue,
 		mean: expectedValue,
@@ -16,9 +16,8 @@ export default function (n, p) {
 		standardDeviation,
 		sd: standardDeviation,
 		mode,
-		median,
 		pmf: (k) => {
-			return ncr(n,k)*Math.pow(p, k)*Math.pow((1-p), (n-k));
+			return ncr(K, k) * ncr(N - K, n - k) / ncr(N, n)
 		},
 		cdf: (k) => {
 			let cumulation = 0;

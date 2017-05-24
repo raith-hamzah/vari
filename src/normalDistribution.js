@@ -17,6 +17,7 @@ export default function (mu, v) {
 		standardDeviation,
 		sd: standardDeviation,
 		mode,
+		median,
 		pdf: (x) => {
 			return  (1 / Math.sqrt(2 * Math.PI * sigma * sigma)) * 
 				Math.pow(Math.E, (- (Math.pow((x - mu), 2)/(2 * sigma * sigma)))); 
@@ -27,5 +28,5 @@ export default function (mu, v) {
 		skewness,
 		entropy: (0.5 * Math.log(2 * Math.PI * Math.E * sigma * sigma))
 
-	}
+	};
 }

@@ -16,6 +16,7 @@ export default function (lambda) {
 		standardDeviation,
 		sd: standardDeviation,
 		mode,
+		median,
 		pdf: (x) => {
 			return lambda * Math.pow(Math.E, ((0-lambda) * x)) 
 		},
@@ -25,5 +26,5 @@ export default function (lambda) {
 		skewness,
 		entropy: (1 - Math.log(lambda))
 
-	}
+	};
 }

@@ -16,6 +16,7 @@ export default function (lambda) {
 		standardDeviation,
 		sd: standardDeviation,
 		mode,
+		median,
 		pmf: (k) => {
 			return (Math.pow(lambda,k)*Math.pow(Math.E, lambda*(-1)))/math.fact(k);
 		},
@@ -28,5 +29,5 @@ export default function (lambda) {
 		},
 		skewness,
 
-	}
+	};
 }
