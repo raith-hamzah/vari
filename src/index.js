@@ -15,7 +15,7 @@ const Vari = {
   ncr,
   nchoosek: ncr,
   binomialCoefficient: ncr,
-  ev,
+  E: ev,
   mean: ev,
   expectedValue: ev,
   sd,

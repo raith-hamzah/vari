@@ -1,4 +1,4 @@
-import math from 'mathjs'
+import {erf} from 'mathjs'
 
 export default function (mu, v) {
   const sigma = Math.sqrt(v)
@@ -23,7 +23,7 @@ export default function (mu, v) {
 				Math.pow(Math.E, (-(Math.pow((x - mu), 2) / (2 * sigma * sigma))))
     },
     cdf: (x) => {
-      return 0.5 * (1 + math.erf((x - mu) / (sigma * Math.sqrt(2))))
+      return 0.5 * (1 + erf((x - mu) / (sigma * Math.sqrt(2))))
     },
     skewness,
     entropy: (0.5 * Math.log(2 * Math.PI * Math.E * sigma * sigma))

@@ -1,5 +1,3 @@
-import math from 'mathjs'
-
 export default function (lambda) {
   const expectedValue = 1 / lambda
   const variance = 1 / Math.pow(lambda, 2)
