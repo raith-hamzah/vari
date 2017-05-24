@@ -1,5 +1,5 @@
-import {fact} from 'mathjs'
+import {factorial} from 'mathjs'
 
 export default function (n, k) {
-  return fact(n) / (fact(n - k) * fact(k))
+  return factorial(n) / (factorial(n - k) * factorial(k))
 }
