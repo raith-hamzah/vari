@@ -1,17 +1,13 @@
 export default function (array, property) {
   if (array.length === 0) {
-  	return 0
+    return 0
   }
-  let total = 0
-  if (!property) {
-    array.forEach(value => {
-      total += value
-    })
+  let total
+  if (property) {
+    total = array.reduce((a, b) => a + b[property], 0)
     return total / array.length
   } else {
-    array.forEach(value => {
-      total += value[property]
-    })
+    total = array.reduce((a, b) => a + b)
     return total / array.length
   }
 }

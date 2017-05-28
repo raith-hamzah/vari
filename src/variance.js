@@ -9,8 +9,6 @@ export default function (array, property) {
   if (!property) {
     array.forEach(value => {
       ev += value
-    })
-    array.forEach(value => {
       ev2 += value * value
     })
     return (ev2 / array.length) - Math.pow((ev / array.length), 2)
