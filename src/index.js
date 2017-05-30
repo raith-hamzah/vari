@@ -36,8 +36,4 @@ const Vari = {
   H: hyperDist
 
 }
-Object.keys(Vari).forEach(key => {
-  export Vari[key] as key
-})
 export default Vari
-
