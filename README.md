@@ -5,7 +5,7 @@ A lightweight probability and statistics library for dealing with various distri
 ## Creating a distribution
 We bring Vari into the project.
 ```javascript
-import Vari from from 'Vari'
+import Vari from 'Vari'
 ```
 We can then create a distribution. Functions return a distribution object.
 ```javascript
@@ -19,14 +19,17 @@ distribution.sd // standard deviation of distribution
 distribution.mean // expected value
 ```
 Distributions included (With API):
-  * Binomial - Vari.B()
-  * Hypergeometric - Vari.H()
-  * Poisson - Vari.P()
-  * Normal - Vari.N()
-  * Exponential - Vari.Exp()
-  * Uniform - Vari.U()
-
+```javascript
+  const Binomial = Vari.B(n, p)
+  const Hypergeometric = Vari.H(N, K, n)
+  const Poisson = Vari.P(lamda)
+  const Normal = Vari.N(mean, variance)
+  const Exponential = Vari.Exp(lamda)
+  const Uniform = Vari.U(a, b)
+```
 Other functions include:
-  * Expected value - Vari.E()
-  * Binomial Coefficient - Vari.ncr()
-  * Variance - Vari.Var()
+```javascript
+  const Expected value = Vari.E()
+  const Binomial Coefficient = Vari.ncr()
+  const Variance = Vari.Var()
+```
