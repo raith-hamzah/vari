@@ -1,8 +1,8 @@
 {
-  "name": "Vari",
-  "version": "0.2.0",
-  "description": "Produce universal library with webpack and es6",
-  "main": "lib/Vari.js",
+  "name": "vari",
+  "version": "1.0.0",
+  "description": "A lightweight probability and statistics library for mathematicians. ",
+  "main": "lib/vari.min.js",
   "scripts": {
     "build": "webpack --env build",
     "dev": "webpack --progress --colors --watch --env dev",
@@ -27,23 +27,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/rahamzah/Vari.git"
+    "url": "https://github.com/rahamzah/vari.git"
   },
   "keywords": [
-    "webpack",
-    "es6",
-    "starter",
-    "library",
-    "universal",
-    "umd",
-    "commonjs"
+    "distributions",
+    "probability",
+    "statistics",
+    "vari"
   ],
   "author": "Raith Hamzah",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rahamzah/Vari/issues"
+    "url": "https://github.com/rahamzah/vari/issues"
   },
-  "homepage": "https://github.com/rahamzah/Vari",
+  "homepage": "https://github.com/rahamzah/vari",
   "dependencies": {
     "mathjs": "^3.13.1"
   }

@@ -5,7 +5,7 @@ A lightweight probability and statistics library for dealing with various distri
 ## Creating a distribution
 We bring Vari into the project.
 ```javascript
-import Vari from 'Vari'
+import Vari from 'vari'
 ```
 We can then create a distribution. Functions return a distribution object.
 ```javascript
@@ -29,14 +29,14 @@ const Normal = Vari.N(mean, variance)
 const Exponential = Vari.Exp(lamda)
 const Uniform = Vari.U(a, b)
 ```
-Other functions include:
+## Other functions
 ```javascript
 const expectedValue = Vari.E(arr) // takes an array
 const binomialCoefficient = Vari.ncr(5,3) // returns 10
 const variance = Vari.Var(arr) // takes an array
 ```
 
-Vari accomodates a lot of notation styles:
+## Vari accomodates a lot of notation styles:
 ```javascript
 // Expected Value
 Vari.E(arr) || Vari.mean(arr)
