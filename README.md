@@ -1,6 +1,6 @@
-# Vari [![Build Status](https://travis-ci.org/rahamzah/Vari.svg?branch=master)](https://travis-ci.org/rahamzah/Vari)
+# Vari 
 
-A lightweight probability and statistics library for dealing with various distributions.
+A lightweight probability and statistics library for dealing with various distributions. [![Build Status](https://travis-ci.org/rahamzah/Vari.svg?branch=master)](https://travis-ci.org/rahamzah/Vari)
 
 ## Creating a distribution
 We bring Vari into the project.
@@ -14,9 +14,11 @@ const distribution = Vari.Normal(mean, variance)
 ```
 We can then access any information we want in the distribution.
 ```javascript
-distribution.CDF(x) // returns a cumulutive density
-distribution.sd // standard deviation of distribution
 distribution.mean // expected value
+distribution.sd // standard deviation of distribution
+distribution.pdf(x) // returns a probability density
+distribution.cdf(x) // returns a cumulutive density
+
 ```
 Distributions included (With API):
 ```javascript
