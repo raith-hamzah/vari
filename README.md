@@ -1,4 +1,4 @@
-# Vari
+# Vari [![Build Status](https://travis-ci.org/rahamzah/Vari.svg?branch=master)](https://travis-ci.org/rahamzah/Vari)
 
 A lightweight probability and statistics library for dealing with various distributions.
 
