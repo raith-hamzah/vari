@@ -29,7 +29,7 @@ Distributions included (With API):
 ```
 Other functions include:
 ```javascript
-  const Expected value = Vari.E()
-  const Binomial Coefficient = Vari.ncr()
-  const Variance = Vari.Var()
+  const expectedValue = Vari.E()
+  const binomialCoefficient = Vari.ncr()
+  const variance = Vari.Var()
 ```
