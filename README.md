@@ -22,16 +22,24 @@ distribution.cdf(x) // returns a cumulutive density
 ```
 Distributions included (With API):
 ```javascript
-  const Binomial = Vari.B(n, p)
-  const Hypergeometric = Vari.H(N, K, n)
-  const Poisson = Vari.P(lamda)
-  const Normal = Vari.N(mean, variance)
-  const Exponential = Vari.Exp(lamda)
-  const Uniform = Vari.U(a, b)
+const Binomial = Vari.B(n, p)
+const Hypergeometric = Vari.H(N, K, n)
+const Poisson = Vari.P(lamda)
+const Normal = Vari.N(mean, variance)
+const Exponential = Vari.Exp(lamda)
+const Uniform = Vari.U(a, b)
 ```
 Other functions include:
 ```javascript
-  const expectedValue = Vari.E()
-  const binomialCoefficient = Vari.ncr()
-  const variance = Vari.Var()
+const expectedValue = Vari.E(arr) // takes an array
+const binomialCoefficient = Vari.ncr(5,3) // returns 10
+const variance = Vari.Var(arr) // takes an array
 ```
+
+Vari accomodates a lot of notation styles:
+```javascript
+// Expected Value
+Vari.E(arr) || Vari.mean(arr)
+// Distributions (either full name or mathematical symbol)
+Vari.B(n, p) || Vari.Binomial(n, p) //returns binomial distribution
+
