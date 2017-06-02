@@ -1,6 +1,6 @@
-# Vari 
-
-A lightweight probability and statistics library for dealing with various distributions. [![Build Status](https://travis-ci.org/rahamzah/vari.svg?branch=master)](https://travis-ci.org/rahamzah/vari)
+# Vari
+ [![Build Status](https://travis-ci.org/rahamzah/vari.svg?branch=master)](https://travis-ci.org/rahamzah/vari)
+A lightweight probability and statistics library for dealing with various distributions.
 
 ## Creating a distribution
 We bring Vari into the project.
@@ -42,4 +42,3 @@ const variance = Vari.Var(arr) // takes an array
 Vari.E(arr) || Vari.mean(arr)
 // Distributions (either full name or mathematical symbol)
 Vari.B(n, p) || Vari.Binomial(n, p) //returns binomial distribution
-
